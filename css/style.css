@@ -27,13 +27,6 @@ Version      : 1.0
 * 12.FOOTER CSS STYLE
 * ----------------------------------------
 */
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700");
-@import url("https://fonts.googleapis.com/css?family=Volkhov:400italic");
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900");
 html {
   font-family: sans-serif;
@@ -70,14 +63,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: 700;
   line-height: 1.35;
   margin-bottom: .5rem;
   color: #212529;
 }
-
-
 
 .h1,
 h1 {
@@ -155,7 +146,7 @@ img {
 
 @media (min-width: 768px) {
   .section {
-    padding: 4.5rem 0;
+    padding: 7.5rem 0;
   }
 }
 
@@ -181,13 +172,13 @@ img {
   BUTTONS STYLE
 ----------------=----*/
 .btn {
-  font-size: .75rem;
+  font-size: .6875rem;
   font-weight: 700;
   position: relative;
   text-transform: uppercase;
   padding: 1.2rem 2.7rem;
   border: 0.1rem solid transparent;
-
+  transition: all 0.2s ease-in-out;
   letter-spacing: .5px;
 }
 
@@ -233,8 +224,8 @@ img {
 }
 
 .bg-primary, .btn-primary, .btn-white:hover {
-  background: #eb252eff !important;
-  border-color: #eb252eff !important;
+  background: #FF4040 !important;
+  border-color: #FF4040 !important;
   color: #fff;
 }
 
@@ -286,11 +277,11 @@ img {
 }
 
 .bg-primary {
-  background: #eb252eff !important;
+  background: #FF4040 !important;
 }
 
 a {
-  color: #eb252eff;
+  color: #FF4040;
 }
 
 a:hover, a:focus {
@@ -311,7 +302,7 @@ a:hover, a:focus {
 }
 
 .header-socials li a {
-  color: #eb252eff;
+  color: #FF4040;
 }
 
 /*-----------------
@@ -322,8 +313,7 @@ a:hover, a:focus {
 }
 
 .top-info-block {
-  margin: 0px 20px;
-text-align: left;
+  margin-right: 30px;
 }
 
 .top-info-block h5, .top-info-block p {
@@ -332,7 +322,7 @@ text-align: left;
 
 .icon-block {
   margin-right: 20px;
-  color: #eb252eff;
+  color: #FF4040;
   font-size: 40px;
   line-height: 20px;
   font-weight: 400;
@@ -356,7 +346,7 @@ text-align: left;
  HOME-3
 ---------------------------*/
 .header-white {
-  background: #eb252eff;
+  background: #FF4040;
   box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
   border-radius: 0px;
 }
@@ -415,7 +405,7 @@ PRELOADER
   -webkit-border-radius: 100px;
   -o-border-radius: 100px;
   -ms-border-radius: 100px;
-  border-right: 3px solid #eb252eff !important;
+  border-right: 3px solid #FF4040 !important;
   border-top: 3px solid rgba(19, 19, 19, 0.1) !important;
   height: 50px;
   left: 50%;
@@ -502,11 +492,11 @@ PAGE BANNER
 }
 
 .page-banner-content h1 {
-  color: #000;
+  color: #fff;
 }
 
 .page-banner-content p {
-  color: #000;
+  color: #eee;
 }
 
 .form-control {
@@ -528,7 +518,7 @@ PAGE BANNER
 }
 
 .main-nav {
-  margin-bottom: 45px;
+  margin-bottom: -45px;
   z-index: 999;
 }
 
@@ -657,7 +647,7 @@ PAGE BANNER
 .dropdown-item:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #eb252eff;
+  background-color: #FF4040;
 }
 
 /*----------------------
@@ -684,142 +674,28 @@ PAGE BANNER
   margin-bottom: 2.5rem !important;
 }
 
-#landing {
-  background: url("../images/p5.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 50%;
-  padding: 100px 0 100px 0;
-  position: relative;
-}
-#landing:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, #fff1ee, #fff);
-  opacity: 0.6;
-}
-
-
-#student {
-  background: url("../images/1107.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 50%;
-  padding: 100px 0 100px 0;
-  position: relative;
-}
-
-
-#student:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, #fff1ee, #fff);
-  opacity: 0.6;
-}
-
-
-#student .block h4 {
-  font-family: 'Alfa Slab One', sans-serif !important;
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 60px;
-  letter-spacing: 10px;
-    color: #fff;
-}
-
-#student .block h3 {
-  font-family: "Muli", sans-serif !important;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 60px;
-  letter-spacing: 5px;
-  text-align: center;
-    color: #fff;
-}
-
-#student .block h2 {
-  font-family: "Muli", sans-serif !important;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 2px;
-  text-align: left;
-  color:#000;
-}
-
-.contact-info-block3 {
-    padding: 40px 20px;
-    border-radius: 5px!important;
-    margin: auto;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: rgba(235, 36, 45, 0.6);
-}
-
-.contact-info-block6 {
-    padding: 20px 20px;
-    border-radius: 5px;
-    margin: auto;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: #eb252eff;
-    width: 100%
-}
-
-.contact-info-block6 p {
-    font-weight: 500;
-}
-
-
 /*-------------------------
  HOME -2
 -----------------------------*/
 #banner {
   position: relative;
-  background: no-repeat;
+  background: url("/images/bg/banner_bg.jpg") no-repeat;
   background-size: cover;
-
-}
-
-#banner #intro {
-margin-top: -120px;
-}
-
-
-
-.contact-info-block4 {
-    padding: 20px 20px;
-    border-radius: 10px;
-    margin: auto;
-
-    background-color: rgba(235, 36, 45, 0.6);
-    color: #fff;
 }
 
 .banner-content {
   padding: 150px 0px;
   padding-right: 30px;
-  margin-top:-100px;
 }
 
 .banner-content p {
-  color: #000;
+  color: #eee;
   padding-right: 80px;
   margin-bottom: 30px !important;
 }
 
 .banner-content .display-4 {
-  color: #000;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -828,7 +704,7 @@ margin-top: -120px;
 }
 
 .banner-contact-form {
-  padding: ;
+  padding: 45px 40px;
   margin-top: 30px;
 }
 
@@ -864,7 +740,7 @@ margin-top: -120px;
   position: absolute;
   content: "";
   top: -27px;
-  background-color: #eb252eff;
+  background-color: #FF4040;
   opacity: .3;
   width: 80px;
   right: 70px;
@@ -888,22 +764,23 @@ ABOUT-2
   box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
 }
 
-
+#about .img-block img {
+  border: 5px solid #FF4040;
+}
 
 .pt-6 {
-  padding-top: 2.5rem;
+  padding-top: 4.5rem;
 }
 
 .img-icon i {
   font-size: 60px;
-  color:#eb252eff;
 }
 
 /*----------------------
  SERVICE
 -----------------------*/
 h5.subtitle {
-  color: #eb252eff;
+  color: #FF4040;
   margin-bottom: 10px;
   font-weight: 300;
 }
@@ -934,7 +811,7 @@ h5.subtitle {
   font-size: 25px;
   width: 50px;
   height: 50px;
-  background: #eb252eff;
+  background: #FF4040;
   text-align: center;
   border-radius: 50%;
   padding-top: 5px;
@@ -998,7 +875,7 @@ h5.subtitle {
 }
 
 .web-service-block:hover i {
-  color: #eb252eff;
+  color: #FF4040;
 }
 
 .web-service-block:hover h3 {
@@ -1011,7 +888,7 @@ h5.subtitle {
 
 .service-img {
   margin-bottom: -200px;
-  border: 10px solid #fff;
+
   z-index: 9999;
 }
 
@@ -1034,7 +911,7 @@ h5.subtitle {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.92);
 }
 
 .overlay.feature-overlay {
@@ -1080,7 +957,7 @@ h5.subtitle {
 }
 
 .project-content-block h4 {
-  color: #eb252eff;
+  color: #FF4040;
 }
 
 .project-content-block p {
@@ -1118,7 +995,7 @@ h5.subtitle {
   position: absolute;
   left: 30px;
   top: -23px;
-  background: #eb252eff;
+  background: #FF4040;
   color: #fff;
 }
 
@@ -1232,7 +1109,7 @@ h5.subtitle {
   font-family: "Font Awesome 5 Free";
   left: 0px;
   top: 5px;
-  color: #eb252eff;
+  color: #FF4040;
   font-weight: 900;
 }
 
@@ -1318,7 +1195,7 @@ PRICING-2
 }
 
 .blog-content:hover a h3 {
-  color: #eb252eff;
+  color: #FF4040;
 }
 
 .blog-content h6 span {
@@ -1415,11 +1292,11 @@ CONTACT PAGE
   font-size: 40px;
   margin-bottom: 20px;
   display: block;
-  color: #eb252eff;
+  color: #FF4040;
 }
 
 .form-control:focus, .form-control:hover {
-  border-color: #eb252eff;
+  border-color: #FF4040;
   box-shadow: none;
 }
 
@@ -1486,7 +1363,6 @@ CONTACT PAGE
   color: #888;
   font-size: 16px;
   position: relative;
-  padding-right: 10px;
 }
 
 .footer-copy:before {
@@ -1500,7 +1376,7 @@ CONTACT PAGE
 }
 
 .current-year {
-  color: #eb252eff !important;
+  color: #FF4040 !important;
 }
 
 /*-----------------------------
@@ -1512,7 +1388,7 @@ CONTACT PAGE
   right: 30px;
   bottom: 50px;
   z-index: 999;
-  background: #eb252eff;
+  background: #FF4040;
   color: #fff !important;
   border-radius: 100%;
   opacity: 0;
@@ -1610,7 +1486,7 @@ CONTACT PAGE
     margin-bottom: 10px;
   }
   .main-navigation {
-    margin-top: ;
+    margin-top: 20px;
   }
   .main-nav .navbar-brand h4 {
     color: #fff;
@@ -1659,7 +1535,11 @@ CONTACT PAGE
   .pricing-box {
     margin-top: 30px;
   }
-
+  .main-navigation.menu-2 {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+  }
   .top-info-block {
     margin: 0px 20px;
     text-align: left;
@@ -1682,7 +1562,7 @@ CONTACT PAGE
 }
 
 /*----------------------------------
-    WIDE MOBILE LAYOUT: 768px
+    WIDE MOBILE LAYOUT: 7680px
 -----------------------------------*/
 @media (max-width: 768px) {
   .display-4 {
@@ -1753,7 +1633,11 @@ CONTACT PAGE
   .pricing-box {
     margin-top: 30px;
   }
-
+  .main-navigation.menu-2 {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+  }
   .img-icon-block:before {
     right: auto;
   }
@@ -1766,7 +1650,7 @@ CONTACT PAGE
   }
   .navbar-collapse.collapse.show {
     padding-bottom: 30px;
-    background: #eb252eff;
+    background: #FF4040;
   }
   #map {
     margin-top: 40px;
@@ -1798,7 +1682,7 @@ CONTACT PAGE
   }
   .navbar-collapse.collapse.show {
     padding-bottom: 30px;
-    background: #eb252eff;
+    background: #FF4040;
   }
   .top-info-block {
     text-align: center;
@@ -1873,6 +1757,11 @@ CONTACT PAGE
   .pricing-box {
     margin-top: 30px;
   }
+  .main-navigation.menu-2 {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+  }
   .banner-content p {
     padding-right: 0px;
   }
@@ -1880,7 +1769,7 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .main-navigation.menu-2 {
-    margin-top: 48px;
+    margin-top: 20px;
     position: absolute;
     width: 100%;
   }
@@ -1924,7 +1813,7 @@ CONTACT PAGE
 /* Custom, iPhone Retina */
 @media (max-width: 480px) {
   .bg-light {
-    background:;
+    background: transparent !important;
   }
   .main-navigation {
     margin-top: 40px;
@@ -2000,7 +1889,7 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .banner-content .display-4 {
-    font-size: 48px;
+    font-size: 28px;
     line-height: 38px;
   }
   .banner-content p {
@@ -2010,13 +1899,13 @@ CONTACT PAGE
     margin-top: 30px;
   }
   .main-navigation.menu-2 {
-    margin-top: 50px;
+    margin-top: 20px;
     position: absolute;
     width: 100%;
   }
   .navbar-collapse.collapse.show {
     padding-bottom: 30px;
-    background: #eb252eff;
+    background: #FF4040;
   }
   .web-service-block {
     margin-bottom: 30px;
